@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/loadingLaoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#000">
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainLaout1"
+        android:layout_width="match_parent"
+        app:tabTextColor="#fff"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:background="#000">
+
+        <LinearLayout
+            android:id="@+id/mainLaout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#3E0404"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilePicId"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/defoult_image_male"
+                    app:civ_border_width="2dp"
+                    android:layout_marginRight="7dp"
+                    app:civ_border_color="@color/profile_pic_border" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/appName"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right">
+                <ImageButton
+                    android:id="@+id/menuId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_circul"
+                    android:padding="1dp"
+                    android:src="@drawable/menu_icon4"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabeLayoutId"
+            app:tabTextColor="#fff"
+            android:background="#3E0404"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerId"
+        app:tabTextColor="#fff"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <RelativeLayout
+       android:id="@+id/mainLaout"
+       android:visibility="visible"
+       android:layout_below="@id/loadingLaoutId"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/verificationLayought"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:gravity="center"
+            android:background="#000"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/headerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Email is not verified"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#CF3030"/>
+            <TextView
+                android:id="@+id/chatBoxMessageId"
+                android:layout_below="@+id/headerId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Email is not"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/reSendVerificationMail"
+                android:layout_below="@+id/chatBoxMessageId"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="Resend Verification Mail"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:background="@drawable/input_background"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/reloadId"
+                android:layout_below="@+id/reSendVerificationMail"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text="Reload"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:background="@drawable/input_background"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/logoutId"
+                android:layout_below="@+id/reloadId"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:text=" Delete account"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:background="@drawable/input_background"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+   </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

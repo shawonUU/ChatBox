@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="20"
+    android:orientation="vertical"
+    tools:context=".Myprofile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#3E0404"
+        android:gravity="center_vertical"
+        android:layout_weight="2">
+        <ImageButton
+            android:id="@+id/backButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_circul"
+            android:src="@drawable/back_button_icon"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lodingLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="18"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="18">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePicId"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/defoult_image_male"
+                        app:civ_border_width="3dp"
+                        android:layout_marginRight="7dp"
+                        app:civ_border_color="@color/profile_pic_border" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+                        <ImageView
+                            android:id="@+id/addProfilepicId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:background="@drawable/background_circle_white"
+                            android:src="@drawable/add_photo_icon"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/userNameId"
+                            android:layout_width="match_parent"
+                            android:padding="3dp"
+                            android:layout_height="match_parent"
+                            android:maxWidth="290dp"
+                            android:text="User Name"
+                            android:textSize="18dp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#fff"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom">
+                            <ImageView
+                                android:id="@+id/editUserNameId"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:padding="3dp"
+                                android:background="@drawable/background_circle_white"
+                                android:src="@drawable/textedit_icon"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/statusId"
+                            android:layout_width="match_parent"
+                            android:padding="3dp"
+                            android:layout_height="match_parent"
+                            android:maxWidth="280dp"
+                            android:text="My Status"
+                            android:textSize="14dp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#fff"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom">
+                            <ImageView
+                                android:id="@+id/editStatusId"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:padding="3dp"
+                                android:background="@drawable/background_circle_white"
+                                android:src="@drawable/textedit_icon"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/extraLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/birthdayViewId"
+                                android:layout_width="match_parent"
+                                android:padding="3dp"
+                                android:layout_height="match_parent"
+                                android:text="Birth day"
+                                android:textSize="13dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="#fff"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom">
+                                <ImageView
+                                    android:id="@+id/editBirthdayId"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:padding="3dp"
+                                    android:background="@drawable/background_circle_white"
+                                    android:src="@drawable/textedit_icon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/genderViewId"
+                                android:layout_width="match_parent"
+                                android:padding="3dp"
+                                android:layout_height="match_parent"
+                                android:text="Gender"
+                                android:textSize="13dp"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="#fff"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom">
+                                <ImageView
+                                    android:id="@+id/editGenderId"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:padding="3dp"
+                                    android:background="@drawable/background_circle_white"
+                                    android:src="@drawable/textedit_icon"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/seeMoreId"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@drawable/input_background">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/more_info_icon"
+                        android:padding="1dp"
+                        android:background="@color/white"/>
+                    <TextView
+                        android:id="@+id/seeMoreLaseId"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:textColor="#fff"
+                        android:layout_height="wrap_content"
+                        android:text="See more"
+                        android:textSize="11dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

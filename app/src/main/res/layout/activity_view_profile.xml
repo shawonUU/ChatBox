@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ViewProfile">
+    <LinearLayout
+        android:id="@+id/loadingLaoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#000">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3E0404"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/backButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_circul"
+                android:src="@drawable/back_button_icon"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePicId"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/defoult_image_male"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/profile_pic_border" />
+
+        <TextView
+            android:id="@+id/userNameId"
+            android:layout_width="match_parent"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="290dp"
+            android:text="User Name"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/statusId"
+            android:layout_width="match_parent"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="280dp"
+            android:text="My Status.."
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:id="@+id/buttonAbbId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/addFriendId"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Add Friend"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:background="@drawable/my_button_green" />
+
+            <TextView
+                android:id="@+id/removeFriendId"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="3dp"
+                android:text="Cancel"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:background="@drawable/my_button_red" />
+
+            <ImageButton
+                android:id="@+id/chatButtonId"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@drawable/background_circul"
+                android:padding="5dp"
+                android:src="@drawable/chat_icone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extraLayout"
+
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/birthdayViewId"
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="match_parent"
+                android:text="Birth day"
+                android:textSize="13dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+
+            <TextView
+                android:id="@+id/genderViewId"
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:layout_height="match_parent"
+                android:text="Gender"
+                android:textSize="13dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seeMoreId"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@drawable/input_background">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/more_info_icon"
+                android:padding="1dp"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/seeMoreLaseId"
+                android:layout_width="wrap_content"
+                android:paddingLeft="3dp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="See more"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

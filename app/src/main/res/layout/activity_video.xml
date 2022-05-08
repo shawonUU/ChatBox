@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#000"
+    android:weightSum="20"
+    android:orientation="vertical"
+    tools:context=".Video">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#3E0404"
+        android:gravity="center_vertical"
+        android:layout_weight="2">
+        <ImageButton
+            android:id="@+id/backButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_circul"
+            android:src="@drawable/back_button_icon"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoLayoutId"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <VideoView
+                android:id="@+id/videoViewId"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="true"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/audioLayoutId"
+        android:visibility="gone"
+        android:background="@drawable/audio_background"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16">
+       <ImageView
+           android:id="@+id/audioPlayId"
+           android:layout_width="100dp"
+           android:layout_height="100dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageLayoutId"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#3E0404"
+        android:padding="5dp">
+        <ImageButton
+            android:id="@+id/downloadButtonId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#3E0404"
+            android:layout_height="match_parent"
+            android:src="@drawable/download_icon"/>
+
+        <ImageButton
+            android:id="@+id/deleteButtonId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#3E0404"
+            android:layout_height="match_parent"
+            android:src="@drawable/delete_icon"/>
+
+        <ImageButton
+            android:id="@+id/detailsButtonId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#3E0404"
+            android:layout_height="match_parent"
+            android:src="@drawable/details_icon"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#3E0404"
+        android:gravity="center_vertical"
+        android:layout_weight="2">
+        <ImageButton
+            android:id="@+id/backButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_circul"
+            android:src="@drawable/back_button_icon"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_weight="18">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="First Name"/>
+            <EditText
+                android:id="@+id/firstNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:background="@drawable/button_background"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="Last Name"/>
+            <EditText
+                android:id="@+id/lastNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:background="@drawable/button_background"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="Status"/>
+            <EditText
+                android:id="@+id/statusId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:background="@drawable/button_background"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="Deth of Birth"/>
+            <EditText
+                android:id="@+id/dateBirthId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:background="@drawable/button_background"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:text="Gender"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupId"
+                android:layout_below="@+id/birthday"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/button_background"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/maleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Male"
+                    android:textColor="#ffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/femaleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="false"
+                    android:text="Female"
+                    android:textColor="#ffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/commonId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:checked="false"
+                    android:text="Common"
+                    android:textColor="#ffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/updateButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:background="@drawable/button_background"
+            android:text="Update"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

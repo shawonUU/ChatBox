@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "399222195974",
+    "firebase_url": "https://chatbox-927c0.firebaseio.com",
+    "project_id": "chatbox-927c0",
+    "storage_bucket": "chatbox-927c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399222195974:android:09106b4ee5c94cf68cc087",
+        "android_client_info": {
+          "package_name": "com.example.chatbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399222195974-kc223kbptfpt3clbv3rpsv7s4of23i16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ5UG1s5qLpzvTXzSDJp6ACYfxfwgmOVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399222195974-kc223kbptfpt3clbv3rpsv7s4of23i16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399222195974:android:a1ff0b698c6e7e848cc087",
+        "android_client_info": {
+          "package_name": "com.example.dell.chatbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399222195974-kc223kbptfpt3clbv3rpsv7s4of23i16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ5UG1s5qLpzvTXzSDJp6ACYfxfwgmOVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399222195974-kc223kbptfpt3clbv3rpsv7s4of23i16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

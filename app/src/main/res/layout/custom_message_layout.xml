@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="1dp"
+    android:gravity="end"
+    android:layout_height="wrap_content">
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/textMessageLayoutId"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/defoult_image_common"/>
+        <LinearLayout
+            android:id="@+id/gravity_layoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:layout_toEndOf="@+id/message_profile_image"
+            android:weightSum="6">
+            <LinearLayout
+                android:id="@+id/receiver_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/reciverDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/receiver_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/reciver_messages_layout"
+                    android:text="Receiver message"
+                    android:padding="10dp"
+                    android:textSize="13dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/reciverStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sender_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/senderDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:text="up"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/sender_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/sender_messages_layout"
+                    android:text="Sender message"
+                    android:padding="10dp"
+                    android:textSize="13dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/senderStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="down"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/imageMessageLayoutId"
+        android:layout_below="@id/textMessageLayoutId"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_message_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/defoult_image_common"/>
+        <LinearLayout
+            android:id="@+id/image_gravity_layoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:layout_toEndOf="@+id/image_message_profile_image"
+            android:weightSum="6">
+            <LinearLayout
+                android:id="@+id/image_receiver_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/image_reciverDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <ImageView
+                    android:id="@+id/image_receiver_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/loading_image"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:id="@+id/image_reciverStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/image_sender_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/image_senderDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:text="up"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <ImageView
+                    android:id="@+id/image_sender_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/loading_image"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:id="@+id/image_senderStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="down"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/video_textMessageLayoutId"
+        android:layout_below="@+id/imageMessageLayoutId"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/video_message_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/defoult_image_common"/>
+        <LinearLayout
+            android:id="@+id/video_gravity_layoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:layout_toEndOf="@+id/video_message_profile_image"
+            android:weightSum="6">
+            <LinearLayout
+                android:id="@+id/video_receiver_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/video_reciverDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <VideoView
+                    android:id="@+id/video_receiver_message_text"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/play_video"
+                    android:layout_alignParentStart="true"
+                   android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/video_reciverStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/video_sender_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/video_senderDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:text="up"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <VideoView
+                    android:id="@+id/video_sender_message_text"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/play_video"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/video_senderStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="down"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/audio_textMessageLayoutId"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/audio_message_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/defoult_image_common"/>
+        <LinearLayout
+            android:id="@+id/audio_gravity_layoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:layout_toEndOf="@+id/audio_message_profile_image"
+            android:weightSum="6">
+            <LinearLayout
+                android:id="@+id/audio_receiver_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/audio_reciverDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/audio_receiver_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/reciver_messages_layout"
+                    android:text="______________"
+                    android:paddingTop="5dp"
+                    android:paddingRight="3dp"
+                    android:drawableLeft="@drawable/play_icon"
+                    android:paddingBottom="10dp"
+                    android:textSize="13dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/audio_reciverStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/audio_sender_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/audio_senderDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:text="up"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/audio_sender_message_text"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/sender_messages_layout"
+                    android:text="______________"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="3dp"
+                    android:drawableRight="@drawable/play_icon"
+                    android:paddingBottom="10dp"
+                    android:textSize="13dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/audio_senderStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="down"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/file_textMessageLayoutId"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/file_message_profile_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/defoult_image_common"/>
+        <LinearLayout
+            android:id="@+id/file_gravity_layoutId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:layout_toEndOf="@+id/file_message_profile_image"
+            android:weightSum="6">
+            <LinearLayout
+                android:id="@+id/file_receiver_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/file_reciverDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <ImageView
+                    android:id="@+id/file_receiver_message_text"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/file_image"
+                    android:text="Receiver message"
+                    android:padding="10dp"
+                    android:textSize="13dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/file_reciverStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/file_sender_layoutId"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/file_senderDateShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:text="up"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+                <ImageView
+                    android:id="@+id/file_sender_message_text"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="Sender message"
+                    android:src="@drawable/file_image"
+                    android:padding="10dp"
+                    android:textSize="13dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/file_senderStatusShowId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="down"
+                    android:visibility="gone"
+                    android:padding="3dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

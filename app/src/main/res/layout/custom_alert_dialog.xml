@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:gravity="center"
+    android:background="#B3DAD7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/invisibleId"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/copyButtonId"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/copy_icon"
+        android:background="@drawable/my_button_green"
+        android:text=" Copy  "/>
+
+    <TextView
+        android:id="@+id/openButtonId"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/open_icon"
+        android:background="@drawable/my_button_green"
+        android:text=" Open  "/>
+
+    <TextView
+        android:id="@+id/downloadButtonId"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/download_icon"
+        android:background="@drawable/my_button_green"
+        android:text=" Download  "/>
+
+    <TextView
+        android:id="@+id/deleteButtonId"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/delete_icon"
+        android:background="@drawable/my_button_red"
+        android:text=" Delete  "/>
+
+    <TextView
+        android:id="@+id/converButtonId"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/delete_forever_icon"
+        android:background="@drawable/my_button_red"
+        android:text="Delete conversation  "/>
+
+    <TextView
+        android:id="@+id/cancelButtonId"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="3dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/cancel_icon"
+        android:background="@drawable/my_button_red"
+        android:text=" Cancel  "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/visibleId"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/searchNameId"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/pan_icone"
+            android:background="@drawable/my_button_green"
+            android:text=" Search by name  "/>
+        <TextView
+            android:id="@+id/searchMailId"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/mail_white_icon"
+            android:background="@drawable/my_button_green"
+            android:text=" Search by emaile  "/>
+    </LinearLayout>
+
+</LinearLayout>

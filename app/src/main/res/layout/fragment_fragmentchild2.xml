@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".fragmentchild.fragmentchild2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/searchOuterId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3E0404"
+            android:layout_gravity="end"
+            android:gravity="end">
+            <SearchView
+                android:id="@+id/searchViewId"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/input_background"
+                android:queryHint="Search here.."
+                android:textColor="#fff"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylearviewId"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/testTextId"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="ff.."
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
